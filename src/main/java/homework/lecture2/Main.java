@@ -38,5 +38,8 @@ public class Main {
         ArrayWithValues9 homework9 = new ArrayWithValues9();
         int [] fillTheArray = homework9.valueArray(10,100);
         System.out.println(Arrays.toString(fillTheArray));
+
+        TwoDemArrayPractice twoDemArrayPractice = new TwoDemArrayPractice();
+        twoDemArrayPractice.createTheTable();
     }
 }
