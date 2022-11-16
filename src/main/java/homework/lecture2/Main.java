@@ -1,5 +1,6 @@
 package homework.lecture2;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -41,5 +42,9 @@ public class Main {
 
         TwoDemArrayPractice twoDemArrayPractice = new TwoDemArrayPractice();
         twoDemArrayPractice.createTheTable();
+
+        MovingArrayElements10 movingArrayElements10 = new MovingArrayElements10();
+        ArrayList<Integer> movedArray = movingArrayElements10.moveElementsToSide(new ArrayList<Integer>(),2);
+        System.out.println(Arrays.toString(movedArray));
     }
 }
