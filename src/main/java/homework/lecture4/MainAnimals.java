@@ -1,6 +1,6 @@
 package homework.lecture4;
 
-public class Main {
+public class MainAnimals {
     public static void main(String[] args) {
         Dog scooby = new Dog(" Scooby", 4);
         Dog bobby = new Dog(" Bobby", 3);
@@ -73,7 +73,7 @@ public class Main {
         cats[2] = lina;
 
         Plate bowl = new Plate(20);
-        for(int i = 0; i < cats.length;i++){
+        for (int i = 0; i < cats.length; i++) {
             cats[i].eating(bowl);
             System.out.println("_________");
         }

@@ -1,13 +1,17 @@
 package homework.lecture4;
 
+import java.util.ArrayList;
+
 public class Payment {
-    Payment.Products computer = new Payment().new Products();
-    Payment.Products laptop = new Payment().new Products();
-    Payment.Products TV = new Payment().new Products();
-    Payment.Products monitor = new Payment().new Products();
 
-    public class Products {
+    private ArrayList<Product> products;
+    private int totalPrice;
 
+    public Payment(ArrayList<Product> products) {
+        this.products = products;
     }
 
+    public int getTotalPrice() {
+        return totalPrice;
+    }
 }

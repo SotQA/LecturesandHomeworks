@@ -44,7 +44,7 @@ public class Main {
         twoDemArrayPractice.createTheTable();
 
         MovingArrayElements10 movingArrayElements10 = new MovingArrayElements10();
-        ArrayList<Integer> movedArray = movingArrayElements10.moveElementsToSide(new ArrayList<Integer>(),2);
-        System.out.println(Arrays.toString(movedArray));
+        ArrayList<Integer> movedArray = movingArrayElements10.moveElementsToSide(new ArrayList<Integer>(new ArrayList<>(10)),2);
+        System.out.println(movedArray);
     }
 }
