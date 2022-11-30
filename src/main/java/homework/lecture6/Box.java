@@ -2,41 +2,26 @@ package homework.lecture6;
 
 import java.util.ArrayList;
 
-public class Box {
-    ArrayList<Orange> boxOfFuckingOranges = new ArrayList<>();
-    ArrayList<Apple> boxOfFuckingApples = new ArrayList<>();
+public class Box<T extends Fruit> {
+    ArrayList<T> boxOfFruits = new ArrayList<>();
+    T fruit;
+    int amountOfFruits;
 
-    public float getWeightOranges() {
-        float result = boxOfFuckingOranges.get(0).getOrangeWeight() * boxOfFuckingOranges.size();
-        System.out.println(" The weight of the fucking box of oranges is : " + result);
-        return result;
-    }
-
-    public float getWeightApples() {
-        float result = boxOfFuckingApples.get(0).getAppleWeight() * boxOfFuckingApples.size();
-        System.out.println(" The weight of the fucking box of apples is : " + result);
-        return result;
-    }
-
-    public void addFuckingOrangeIntoFuckingBox(int amountOfOranges) {
-        for (int i = 0; i < amountOfOranges; i++) {
-            boxOfFuckingOranges.add(new Orange());
+    public Box(T fruit, int amountOfFruits) {
+        this.fruit = fruit;
+        this.amountOfFruits = amountOfFruits;
+        for (int i = 0; i < amountOfFruits; i++) {
+            boxOfFruits.add(fruit);
         }
     }
 
-    public void addApplesToBox(int amountOfApples) {
-        for (int i = 0; i < amountOfApples; i++) {
-            boxOfFuckingApples.add(new Apple());
-        }
+    public void getWeightOranges() {
+        float result = boxOfFruits.get(0).getOrangeWeight() * amountOfFruits;
+        System.out.println("The weight of the box of oranges is " + result + " .");
     }
 
-    public void compare(float boxApples, float boxOranges) {
-        if (boxApples > boxOranges) {
-            System.out.println(" The box with apples is heavier : ");
-        } else if (boxApples == boxOranges) {
-            System.out.println(" The boxes are equal.");
-        } else {
-            System.out.println(" The box with oranges is heavier");
-        }
+    public void getWeightApples() {
+        float result = boxOfFruits.get(0).getAppleWeight() * amountOfFruits;
+        System.out.println("The weight of the box of apples is " + result + " .");
     }
 }

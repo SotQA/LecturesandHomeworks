@@ -2,15 +2,13 @@ package homework.lecture6;
 
 public class Main {
     public static void main(String[] args) {
-        Box boxOfFuckingOranges = new Box();
-        Box boxOfApples = new Box();
+        Box<Orange> boxOfOranges = new Box<>(new Orange(),12);
+        Box<Apple> boxOfApples = new Box<>(new Apple(), 17);
 
-        boxOfFuckingOranges.addFuckingOrangeIntoFuckingBox(6);
-        float resultOrange = boxOfFuckingOranges.getWeightOranges();
+        boxOfOranges.getWeightOranges();
+        boxOfApples.getWeightApples();
 
-        boxOfApples.addApplesToBox(9);
-        float resultApple = boxOfApples.getWeightApples();
 
-        boxOfApples.compare(resultApple, resultOrange);
+
     }
 }
