@@ -1,14 +1,13 @@
 package homework.lecture6;
 
 public abstract class Fruit {
-    float orangeWeight = 1.5f;
-    float appleWeight = 1.0f;
+    protected float weight;
 
-    public float getOrangeWeight() {
-        return orangeWeight;
+    public Fruit(float weight) {
+        this.weight = weight;
     }
 
-    public float getAppleWeight() {
-        return appleWeight;
+    public float getWeight() {
+        return weight;
     }
 }

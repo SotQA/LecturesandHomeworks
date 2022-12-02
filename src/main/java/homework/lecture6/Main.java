@@ -2,13 +2,32 @@ package homework.lecture6;
 
 public class Main {
     public static void main(String[] args) {
-        Box<Orange> boxOfOranges = new Box<>(new Orange(),12);
-        Box<Apple> boxOfApples = new Box<>(new Apple(), 17);
+        Box<Orange> boxOfOranges = new Box<>(new Orange(1.5f), 15);
+        Box<Apple> boxOfApples = new Box<>(new Apple(1.0f), 19);
+        Box<Orange> extraBox = new Box<>();
 
-        boxOfOranges.getWeightOranges();
-        boxOfApples.getWeightApples();
+        System.out.println("Now there are " + boxOfOranges.boxOfFruits.size() + " oranges in the box.");
+        System.out.println("Now there are " + boxOfApples.boxOfFruits.size() + " apples in the box.");
+
+        float weightOfOrangesBox = boxOfOranges.getWeight();
+        System.out.println("The weight os the box of oranges is : " + weightOfOrangesBox + " .");
+        float weightOfApplesBox = boxOfApples.getWeight();
+        System.out.println("The weight os the box of apples is : " + weightOfApplesBox + " .");
 
 
+        boolean isEqual = boxOfOranges.compare(boxOfApples);
+        System.out.println("The boxes are equal in weight: " + isEqual + " .");
 
+        extraBox.addFruitsFromBox(boxOfOranges, 5);
+        System.out.println("Now we take oranges from the box of oranges and put them into the extra box .");
+
+        System.out.println("Now there are " + boxOfOranges.boxOfFruits.size() + " oranges in the box.");
+        System.out.println("Now there are " + boxOfApples.boxOfFruits.size() + " apples in the box.");
+        System.out.println("Now there are " + extraBox.boxOfFruits.size() + " fruits in the extra box.");
+
+        boxOfOranges.getWeight();
+        System.out.println("The weight of the box of oranges is : " + weightOfOrangesBox + " .");
+        boxOfApples.getWeight();
+        System.out.println("The weight of the box of apples is : " + weightOfApplesBox + " .");
     }
 }
