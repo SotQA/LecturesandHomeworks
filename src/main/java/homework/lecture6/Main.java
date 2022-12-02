@@ -25,9 +25,7 @@ public class Main {
         System.out.println("Now there are " + boxOfApples.boxOfFruits.size() + " apples in the box.");
         System.out.println("Now there are " + extraBox.boxOfFruits.size() + " fruits in the extra box.");
 
-        boxOfOranges.getWeight();
-        System.out.println("The weight of the box of oranges is : " + weightOfOrangesBox + " .");
-        boxOfApples.getWeight();
-        System.out.println("The weight of the box of apples is : " + weightOfApplesBox + " .");
+        System.out.println("The weight of the box of oranges is : " + boxOfOranges.getWeight() + " .");
+        System.out.println("The weight of the box of apples is : " + boxOfApples.getWeight() + " .");
     }
 }
