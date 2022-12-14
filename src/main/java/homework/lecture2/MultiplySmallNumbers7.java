@@ -5,9 +5,8 @@ public class MultiplySmallNumbers7 {
 
     public void  multiplication() {
         for (int i = 0; i < arrayOfNumbers.length; i++) {
-            if (arrayOfNumbers[i] < 6) {
+            if (arrayOfNumbers[i] < 6)
                 arrayOfNumbers[i] *= 2;
-            }
         }
     }
 }
