@@ -10,15 +10,9 @@ public class Main {
         employees[3] = new Employee(" Kianu Reaves", " Senior Automation", "maileco@mail.ru", 6728391, 1700, 23);
         employees[4] = new Employee(" Mug Muglestone", "Designer", "1245121@mail.yahoo", 1112311, 2300, 51);
 
-        for(int i = 0; i < employees.length; i++){
-            if(employees[i].age > 40){
+        for (int i = 0; i < employees.length; i++) {
+            if (employees[i].age > 40) {
                 employees[i].showInformation();
-            }
-        }
-
-        for(Employee arrayEmployer: employees){
-            if(arrayEmployer.age > 40){
-                //employees[].showInformation();
             }
         }
     }

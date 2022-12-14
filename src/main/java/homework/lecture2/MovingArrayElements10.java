@@ -1,17 +1,17 @@
 package homework.lecture2;
 
-import java.util.ArrayList;
-
 public class MovingArrayElements10 {
+    public int[] moveElements(int[] arrayOfNumbers, int n) {
+        int elementsInArray = arrayOfNumbers.length;
+        int slotsToMove = elementsInArray % n;
+        for (int i = 0; i < elementsInArray; i++) {
+            if (n == elementsInArray) {
+                return arrayOfNumbers;
+            } else if (n > 0) {
 
-    public ArrayList<Integer> moveElementsToSide(ArrayList<Integer> arrayWithElements, int n) {
-        int indexesInArray = arrayWithElements.size();
-        int moveElementsOn = indexesInArray % n;
-        if (moveElementsOn > 0) {
-
-        } else {
-
+            }
         }
-        return arrayWithElements;
+        return null;
     }
 }
+

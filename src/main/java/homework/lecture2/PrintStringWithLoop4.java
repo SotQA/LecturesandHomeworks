@@ -8,12 +8,11 @@ public class PrintStringWithLoop4 {
         return str;
     }
 
-    public boolean theBigYear(int number) {
-        if (number % 4 == 0 && number % 400 == 0) {
-            return true;
-        } else if (number == 100) {
-            return false;
+    public void theBigYear(int year) {
+        if(year % 4 == 0 || year == 400){
+            System.out.println("The year is big");
+        } else{
+            System.out.println("The year is not big.");
         }
-        return false;
     }
 }

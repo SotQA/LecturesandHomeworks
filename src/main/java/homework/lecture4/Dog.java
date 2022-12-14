@@ -9,6 +9,7 @@ public class Dog extends Animal {
         counter++;
     }
 
+    @Override
     public void animalSwims(int distance) {
         if (distance >= 10) {
             System.out.println(name + " cannot swim more than 10 meters!");
@@ -17,6 +18,7 @@ public class Dog extends Animal {
         }
     }
 
+    @Override
     public void animalRuns(int distance) {
         if (distance >= 500) {
             System.out.println(name + " cannot run more than 500 meters!");
@@ -29,7 +31,7 @@ public class Dog extends Animal {
         if (plate.foodInPlate - appetite >= 0) {
             plate.decreaseFood(appetite);
             System.out.println(" The dog " + name + " ate " + appetite + " food from the plate .");
-        } else if (plate.foodInPlate - appetite < 0){
+        } else if (plate.foodInPlate - appetite < 0) {
             System.out.println(" There is not enough food in the plate for the " + name + "!");
         }
     }
