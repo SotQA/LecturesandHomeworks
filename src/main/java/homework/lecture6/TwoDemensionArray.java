@@ -26,7 +26,7 @@ public class TwoDemensionArray {
         }
     }
 
-    public void arrayIntoInt(String[][] stringsArray) throws MyArrayDataException {
+    public void arrayIntoInt(String[][] stringsArray) {
         int sum = 0;
         int[][] intArray = new int[stringsArray.length][stringsArray[0].length];
         for (int i = 0; i < stringsArray.length; i++) {
